@@ -10,7 +10,7 @@ module.exports = {
             if (!addedUsers || addedUsers.length === 0) return;
 
             if (addedUsers.some(user => user.userFbId === api.getCurrentUserID())) {
-                return api.sendMessage("Hello! I'm your bot. Type /help to see my commands!", threadID);
+                return api.sendMessage("Hello! I'm your bot. Type $help to see my commands!", threadID);
             }
             let mentions = [];
             let names = [];
